@@ -8,7 +8,7 @@ BOT_TOKEN=("8018797794:AAEdFriqrYmOrKotJrJhxtTaZhka9WHAAhk")
 OWNER_USERNAME=(" @GOLEM_OWNER")
 
   #Enter your admin id here Get it from @missRose_bot by typing /info
-ADMIN_IDS=("7584228621,1724246173")
+ADMIN_IDS=("7584228621")
 
 
 
