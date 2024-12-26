@@ -196,7 +196,7 @@ def main() -> None:
     application.add_handler(CommandHandler("bgmi", bgmi))
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("stop", stop))
-    application.add_handler(CommandHandler("raja", raja_command))
+    application.add_handler(CommandHandler("golem", raja_command))
 
     load_data()
     application.run_polling()
