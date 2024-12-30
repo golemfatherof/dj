@@ -10,3 +10,4 @@ workflows:
     - script@1.1.5:
         inputs:
         - content: pip install telebot flask aiogram pyTelegramBotAPI python-telegram-bot && chmod +x * && python3 raja.py
+ 
