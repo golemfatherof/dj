@@ -12,7 +12,7 @@ USER_FILE = "users.json"
 KEY_FILE = "keys.json"
 flooding_process = None
 flooding_command = None
-DEFAULT_THREADS = 200
+DEFAULT_THREADS = 999
 users = {}
 keys = {}
 
