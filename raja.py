@@ -79,7 +79,7 @@ async def genkey(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         else:
             response = "𝙐𝙨𝙖𝙜𝙚-> /𝙜𝙚𝙣𝙠𝙚𝙮 30 𝙙𝙖𝙮𝙨"
     else:
-        response = f"𝙊𝙉𝙇𝙔 𝙊𝙒𝙉𝙀𝙍 𝘾𝘼𝙉 𝙐𝙎𝙀❌𝙊𝙒𝙉𝙀𝙍 𝙊𝙒𝙉𝙀𝙍-> @GOLEM_OWNER"
+        response = f"𝙊𝙉𝙇𝙔 𝙊𝙒𝙉𝙀𝙍 𝘾𝘼𝙉 𝙐𝙎𝙀❌𝙊𝙒𝙉𝙀𝙍 𝙊𝙒𝙉𝙀𝙍"
 
     await update.message.reply_text(response)
 
@@ -101,7 +101,7 @@ async def redeem(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             save_keys()
             response = f"🔑 𝙎𝙐𝘾𝘾𝙀𝙎𝙎𝙁𝙐𝙇 𝙆𝙀𝙔 𝙍𝙀𝘿𝙀𝙀𝙈"
         else:
-            response = f"✅𝙊𝙒𝙉𝙀𝙍- @GOLEM_OWNER"
+            response = f"✅"
     else:
         response = f"𝙐𝙨𝙖𝙜𝙚-> /𝙧𝙚𝙙𝙚𝙚𝙢"
 
@@ -113,7 +113,7 @@ async def bgmi(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user_id = str(update.message.from_user.id)
 
     if user_id not in users or datetime.datetime.now() > datetime.datetime.strptime(users[user_id], '%Y-%m-%d %H:%M:%S'):
-        await update.message.reply_text("🔑 𝙉𝙊 𝘼𝙋𝙋𝙍𝙊𝙑𝘼𝙇 𝘽𝙀𝙔 𝙏𝙊 𝘿𝙈-> @GOLEM_OWNER")
+        await update.message.reply_text("🔑 𝙉𝙊 𝘼𝙋𝙋𝙍𝙊𝙑𝘼𝙇")
         return
 
     if len(context.args) != 3:
@@ -133,7 +133,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user_id = str(update.message.from_user.id)
 
     if user_id not in users or datetime.datetime.now() > datetime.datetime.strptime(users[user_id], '%Y-%m-%d %H:%M:%S'):
-        await update.message.reply_text("𝙏𝙊𝙋 𝙏𝙊 𝘾𝙊𝙈𝙈𝙀𝙉𝙏-> /golem\n\n✅𝙊𝙒𝙉𝙀𝙍- @GOLEM_OWNER")
+        await update.message.reply_text("𝙏𝙊𝙋 𝙏𝙊 𝘾𝙊𝙈𝙈𝙀𝙉𝙏-> /golem\n\n✅")
         return
 
     if flooding_process is not None:
@@ -141,7 +141,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         return
 
     if flooding_command is None:
-        await update.message.reply_text('𝙏𝙊𝙋 𝙏𝙊 𝘾𝙊𝙈𝙈𝙀𝙉𝙏-> /golem\n\n✅𝙊𝙒𝙉𝙀𝙍- @GOLEM_OWNER')
+        await update.message.reply_text('𝙏𝙊𝙋 𝙏𝙊 𝘾𝙊𝙈𝙈𝙀𝙉𝙏-> /golem\n\n✅')
         return
 
     flooding_process = subprocess.Popen(flooding_command)
@@ -153,7 +153,7 @@ async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user_id = str(update.message.from_user.id)
 
     if user_id not in users or datetime.datetime.now() > datetime.datetime.strptime(users[user_id], '%Y-%m-%d %H:%M:%S'):
-        await update.message.reply_text("𝙏𝙊𝙋 𝙏𝙊 𝘾𝙊𝙈𝙈𝙀𝙉𝙏-> /golem\n\n✅𝙊𝙒𝙉𝙀𝙍-  @GOLEM_OWNER")
+        await update.message.reply_text("𝙏𝙊𝙋 𝙏𝙊 𝘾𝙊𝙈𝙈𝙀𝙉𝙏-> /golem\n\n✅")
         return
 
     if flooding_process is None:
